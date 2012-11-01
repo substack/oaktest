@@ -1,101 +1,107 @@
 <html>
 <head>
+
+	<!--This is the pop-up box for logging in.  Can you make one for signing up?-->
+	<div class="popUp" id="loginPopUp">
+		<h3>Log In</h3>
+		<form id="loginForm">
+			<input type="text" placeholder="username"></input>
+			<input type="password" placeholder="password"></input>
+			<input type="submit" class="button"></input>
+			<a href='#'><div class="button cancel">Cancel</div></a>
+			<em><a id="forgot" href="#">Forgot Password?</a></em>
+		</form>
+	</div>
+	
+
+
+	<!--End login box.-->
+<div class="popUp" id="signupPopUp">
+		<h3>Sign Up</h3>
+		<form id="signupForm">
+			<input type="email" placeholder="email"></input>
+			<input type="text" placeholder="preferred username"></input>
+			<input type="password" placeholder="password"></input>
+			<input type="password" placeholder="re-type password"></input>
+			<input type="submit" class="button"></input>
+			<a href='#'><div class="button cancel">Cancel</div></a>
+		</form>
+	</div>
+
+
+
+	<div class="topmenu">
+		<span class="login button">log in </span>
+		<span class="signup button">sign up</span>
+	</div>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div>
-    <img src="oaktest-logo.png">
+  <div><center>
+    <img src="oaktest-logo.png"><br>
+    <h2><em>A Site for Learning Math by and for Students!</em></h2>
+	</center>
   </div>
-  
-  <h1>order of operations</h1><br>
-  <div class = "lesson">
-    In the order of operations, you always multiply or divide numbers before
-    you add or subtract them, ignoring the order they are written.  See if you
-    can solve these problems using that rule:
-  </div>
-  
-  <form class="question">
-    <div>
-      <span class="q">
-        4 + 2 * 3
-      </span>
-      = <input type="text" class="answer">
-    </div>
-    <input type="submit">
-  </form>
-  
-  <form class="question">
-    <div>
-      <span class="q">
-        (2 + 8) + 8 * 2
-      </span>
-      = <input type="text" class="answer">
-    </div>
-    <input type="submit">
-  </form>
-  
-  <form class="question">
-    <div>
-      <span class="q">
-        (2 + 8) + 8 * 2
-      </span>
-      = <input type="text" class="answer">
-    </div>
-    <input type="submit">
-  </form>
-  
-  <div class = "lesson">
-    When there are parentheses in a series of operations, you always solve the
-    problems that are within parentheses first!  See if you can find the right
-    answers to these:
-  </div>
-  
-  <form class="question">
-    <div>
-      <span class="q">
-        (2 + 8) + 8 * 2
-      </span>
-      = <input type="text" class="answer">
-    </div>
-    <input type="submit">
-  </form>
-  
-  <form class="question">
-   <div>
-     <span class="q">(8 * 2 + 3)- 18</span>
-     = <input type="text" class="answer">
-   </div>
-   
-    <div>
-      <input type="submit">
-    </div>
-  </form>
- 
-  <form class="question">
-    <div>
-      <span class="q">
-        1+2
-      </span> = <input type="text" class="answer">
-    </div>
-    
-    <div>
-      <input type="submit">
-    </div>
-  </form>
-  
-  <form class="question">
-    <div>
-      <span class="q">
-        3*4 + 2*5
-      </span> = <input type="text" class="answer">
-    </div>
-    
-    <div>
-      <input type="submit">
-    </div>
-  </form>
-  
-  <script src="jquery.js"></script>
-  <script src="browser.js"></script>
+
+<div class="bigList">
+<h2>8-12 Grade Standards</h2>
+<em>All Courses are Derived from the <a href="http://www.cde.ca.gov/be/st/ss/documents/mathstandards.pdf">California State Standards</a></em><br>
+<li>Algebra</li>
+	<div class="lessonList">
+		<li><a href="001.html">The Order of Operations</a></li>
+		<li><a href="002.html">Numeric Opposites</a></li>
+		<li><a href="003.html">Reciprocals</a></li>
+		<li>Roots and Powers</li>
+		<li><a href="005.html">Equations with Absolute Values</a></li>
+		<li><a href="006.html">Simplifying Expressions with FOIL</a> <em>In Progress</em></li>
+		<li><a href="008.html">Linear Equations</a> <em>In Progress</em></li>
+		<li>Deriving Linear Equations from Points</li>
+		<li>The Slopes of Paralell and Perpendicular Lines</li>
+		<li>Systems of Linear Equations</li>
+		<li>Monomials and Polynomials</li>
+		<li>Factoring Polynomials</li>
+		<li>Simplifying Fractions</li>
+		<li>Arithmetic with Expressions</li>
+		<li>Factoring Polynomials</li>
+		<li>Simplifying Fractions</li>
+		<li>Manipulating Fractions</li>
+		<li>Relations and Functions</li>
+		<li>Domains and Ranges</li>
+		<li>Representing domains properly</li>
+		<li>The Quadratic Formula</li>
+		<li>Solving Quadratics</li>
+		<li>Graphing Quadratics</li>
+		<li>Predicting the intercepts of a Quadratic</li>
+		<li>Using Quadratics to Predict Physics</li>
+		<li>Inductive and Deductive Reasoning</li>
+		<li>Logical Deduction</li>
+		<li>Using counterexamples</li>
+		<li>Mathematic Proofs</li>
+	</div>
+<li>Geometry</li>
+	<div class="lessonList">
+		Coming Soon...
+	</div>
+<li>
+	Algebra II
+	<div class="lessonList">
+		Coming Soon...</div>
+		
+</li>
+<li>Probability and Statistics</li>
+	<div class="lessonList">
+		Coming Soon...
+	</div>
+<li>Trigonometry</li>
+<div class="lessonList">Coming Soon...</div>
+<li>Linear Algebra</li><div class="lessonList">Coming Soon...</div>
+<li>Mathematical Analysis</li><div class="lessonList">Coming Soon...</div>
+<li>Advanced Placement Probability and Statistics</li><div class="lessonList">Coming Soon...</div>
+<li>Calculus</li><div class="lessonList">Coming Soon...</div>
+</div>
+	
+
+    <script src="jquery.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
